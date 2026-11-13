@@ -1,12 +1,9 @@
 import Image from "next/image";
-import { hasPublicFile } from "@/lib/assets";
 import { content } from "@/lib/content";
 
 const { mapa } = content;
 
 export default function Mapa() {
-  if (!hasPublicFile(mapa.image.src)) return null;
-
   return (
     <section id="mapa" aria-labelledby="mapa-titulo" className="relative overflow-hidden py-[70px]">
       <div className="container-alpha">

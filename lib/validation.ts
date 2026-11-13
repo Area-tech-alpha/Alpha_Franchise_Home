@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { isValidPhoneNumber } from "libphonenumber-js";
+import { FATURAMENTO_EXIGE_EXTRAS, TRACKING_KEYS, type LeadTracking } from "@/lib/lead-constants";
 
-export const FATURAMENTO_EXIGE_EXTRAS = "Até 30 mil";
+export { FATURAMENTO_EXIGE_EXTRAS, TRACKING_KEYS, type LeadTracking };
 
 function cnpjDigit(digits: string, length: number): number {
   let sum = 0;
@@ -52,17 +53,6 @@ export type LeadFormData = z.infer<typeof leadSchema>;
 
 // Parâmetros de atribuição lidos da URL no navegador. Vêm de fora e nunca
 // barram o lead: valor inválido, vazio ou longo demais é só descartado.
-export const TRACKING_KEYS = [
-  "utm_source",
-  "utm_medium",
-  "utm_campaign",
-  "utm_content",
-  "utm_term",
-  "fbclid",
-] as const;
-
-export type LeadTracking = Partial<Record<(typeof TRACKING_KEYS)[number], string>>;
-
 const trackingValue = z.string().trim().min(1).max(500);
 
 export function parseTracking(raw: unknown): LeadTracking {

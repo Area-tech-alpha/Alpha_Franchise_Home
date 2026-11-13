@@ -1,30 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenu from "@/components/ui/mobile-menu";
-import { hasPublicFile } from "@/lib/assets";
 import { content } from "@/lib/content";
 
 const { nav, logo } = content;
 
 export default function Header() {
-  const hasLogo = hasPublicFile(logo.src);
-
   return (
-    <header className="fixed top-3.5 left-1/2 z-[1000] flex w-[92%] max-w-[1220px] -translate-x-1/2 items-center justify-between rounded-full border border-border bg-[rgba(10,10,11,.72)] py-3 pr-5 pl-[22px] backdrop-blur-[18px] md:top-[18px] md:w-[90%]">
+    <header className="fixed top-3.5 left-1/2 z-[1000] flex w-[92%] max-w-[1220px] -translate-x-1/2 items-center justify-between rounded-full border border-border bg-[rgba(10,10,11,.8)] py-3 pr-5 pl-[22px] backdrop-blur-[10px] md:top-[18px] md:w-[90%]">
       <Link href="/" aria-label={`${logo.alt}, início`} className="flex items-center">
-        {hasLogo ? (
-          <Image
-            src={logo.src}
-            alt={logo.alt}
-            width={logo.width}
-            height={logo.height}
-            priority
-            sizes="118px"
-            className="h-[38px] w-auto object-contain"
-          />
-        ) : (
-          <span className="font-display text-lg font-semibold tracking-wide">{logo.alt}</span>
-        )}
+        <Image
+          src={logo.src}
+          alt={logo.alt}
+          width={logo.width}
+          height={logo.height}
+          priority
+          sizes="118px"
+          className="h-[38px] w-auto object-contain"
+        />
       </Link>
 
       <nav aria-label="Principal" className="hidden lg:block">

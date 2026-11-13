@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { hasPublicFile } from "@/lib/assets";
 import { content } from "@/lib/content";
 
 const { marcas } = content;
 
 export default function LogosMarquee() {
-  const logos = marcas.logos.filter((logo) => hasPublicFile(logo.src));
-  if (logos.length === 0) return null;
+  const { logos } = marcas;
 
   return (
     <section id="marcas" aria-labelledby="marcas-titulo" className="py-[70px]">

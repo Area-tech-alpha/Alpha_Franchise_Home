@@ -154,26 +154,25 @@ export const content = {
     eyebrow: "Liderança",
     title: "As pessoas que fazem a Alpha acontecer",
     people: [
-      { name: "Athos Vilarins", role: "CEO & Founder", photo: "/images/lideranca/athos-vilarins.jpg" },
-      { name: "Pedro Dias", role: "COO", photo: "/images/lideranca/pedro-dias.jpg" },
-      { name: "Gustavo Silva", role: "CFO", photo: "/images/lideranca/gustavo-silva.jpg" },
+      { name: "Athos Vilarins", role: "CEO & Founder", photo: "/images/lideranca/athos-vilarins.webp" },
+      { name: "Pedro Dias", role: "COO", photo: "/images/lideranca/pedro-dias.webp" },
+      { name: "Gustavo Silva", role: "CFO", photo: "/images/lideranca/gustavo-silva.webp" },
     ],
   },
 
-  // No WP os contadores aparecem zerados. Cada valor fica null (e oculto) até o
-  // número real ser confirmado. Ex.: value: "R$500M+".
+  // Valores do WordPress (data-target dos contadores), confirmados. null = oculto.
   numeros: {
     eyebrow: "Nossos números",
     title: "Resultado não é opinião. É número.",
     destaque: {
-      value: null as string | null,
+      value: "R$500M+" as string | null,
       label: "gerados em vendas para os restaurantes que confiaram na Alpha",
     },
     items: [
-      { value: null as string | null, label: "restaurantes já atendidos" },
-      { value: null as string | null, label: "especialistas dedicados" },
-      { value: null as string | null, label: "de aumento médio no faturamento" },
-      { value: null as string | null, label: "franqueados pelo Brasil" },
+      { value: "2.000+" as string | null, label: "restaurantes já atendidos" },
+      { value: "80+" as string | null, label: "especialistas dedicados" },
+      { value: "30%" as string | null, label: "de aumento médio no faturamento" },
+      { value: "70+" as string | null, label: "franqueados pelo Brasil" },
     ],
   },
 
@@ -227,28 +226,28 @@ export const content = {
         title: "A empresa que está redefinindo o marketing gastronômico",
         text: "Como a Alpha virou referência em marketing pra restaurantes na América Latina.",
         href: "https://www.forbespt.com/assessoria-alpha-a-empresa-que-esta-a-redefinir-o-marketing-gastronomico/",
-        image: { src: "/images/midia/forbes-portugal.jpg", alt: "Forbes Portugal sobre a Alpha Assessoria" },
+        image: { src: "/images/midia/forbes-portugal.webp", alt: "Forbes Portugal sobre a Alpha Assessoria" },
       },
       {
         outlet: "Caras Brasil",
         title: "Athos Vilarins e a ascensão da Assessoria Alpha",
         text: "A trajetória do fundador e como a empresa virou potência do setor gastronômico.",
         href: "https://caras.com.br/personalidades/athos-vilarins-transforma-assessoria-alpha-em-potencia-do-marketing-gastronomico.phtml",
-        image: { src: "/images/midia/caras-brasil.jpg", alt: "Caras Brasil sobre Athos Vilarins e a Alpha Assessoria" },
+        image: { src: "/images/midia/caras-brasil.webp", alt: "Caras Brasil sobre Athos Vilarins e a Alpha Assessoria" },
       },
       {
         outlet: "Metrópoles",
         title: "A empresa que movimenta milhões no food service",
         text: "Como a Alpha fatura milhões por ano ajudando restaurantes a vender mais.",
         href: "https://www.metropoles.com/conteudo-especial/empresa-de-marketing-gastronomico-movimenta-milhoes-por-ano-no-brasil",
-        image: { src: "/images/midia/metropoles.jpg", alt: "Metrópoles sobre a Alpha Assessoria" },
+        image: { src: "/images/midia/metropoles.webp", alt: "Metrópoles sobre a Alpha Assessoria" },
       },
       {
         outlet: "Ego Brazil",
         title: "Grupo Alpha aposta em tecnologia pra escalar",
         text: "Tecnologia e gestão como motor de expansão da Alpha pela América Latina.",
         href: "https://egobrazil.com.br/grupo-alpha-aposta-em-tecnologia-e-gestao-para-escalar-restaurantes-na-america-latina/",
-        image: { src: "/images/midia/ego-brazil.jpg", alt: "Ego Brazil sobre o Grupo Alpha" },
+        image: { src: "/images/midia/ego-brazil.webp", alt: "Ego Brazil sobre o Grupo Alpha" },
       },
     ],
     cta: { label: "Ver todas as matérias", href: wp.midia },
@@ -308,7 +307,7 @@ export const content = {
     eyebrow: "Presença nacional",
     title: "Mais de 70 franqueados espalhados por todo o Brasil.",
     text: "Cada franqueado Alpha carrega a mesma metodologia, a mesma exigência e a mesma estrutura 100% presencial, não importa a distância de Brasília.",
-    image: { src: "/images/mapa-brasil.png", alt: "Mapa do Brasil com a presença da Alpha", width: 1024, height: 1024 },
+    image: { src: "/images/mapa-brasil.webp", alt: "Mapa do Brasil com a presença da Alpha", width: 1024, height: 1024 },
   },
 
   depoimentos: {
@@ -402,11 +401,11 @@ export const content = {
     about:
       "A maior assessoria de marketing especializada em restaurantes da América Latina. Estrutura 100% presencial, resultado real.",
     location: "Brasília, DF, atendimento em todo o Brasil",
-    // null = oculto até os links serem confirmados (no WP estão com "#").
+    // null = oculto.
     socials: [
-      { label: "Instagram", href: null as string | null },
-      { label: "TikTok", href: null as string | null },
-      { label: "YouTube", href: null as string | null },
+      { label: "Instagram", href: "https://www.instagram.com/assessorialpha/" as string | null },
+      { label: "TikTok", href: "https://www.tiktok.com/@assessorialpha" as string | null },
+      { label: "YouTube", href: "https://www.youtube.com/@assessorialpha" as string | null },
     ],
     columns: [
       {

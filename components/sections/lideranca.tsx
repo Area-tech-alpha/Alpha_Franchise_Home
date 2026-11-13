@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { hasPublicFile } from "@/lib/assets";
 import { content } from "@/lib/content";
 
 const { lideranca } = content;
 
 export default function Lideranca() {
-  const people = lideranca.people.filter((p) => hasPublicFile(p.photo));
-  if (people.length === 0) return null;
+  const { people } = lideranca;
 
   return (
     <section id="equipe" aria-labelledby="equipe-titulo" className="relative py-[70px]">
