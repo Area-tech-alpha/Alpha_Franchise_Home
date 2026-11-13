@@ -395,7 +395,7 @@ export const content = {
     eyebrow: "Vamos conversar?",
     title: "Seu restaurante não precisa de mais um post bonito. Precisa de mesas cheias.",
     text: "Fale com o time da Alpha e descubra se o seu restaurante está pronto pra virar o próximo case.",
-    cta: { label: "Quero conversar", href: "#contato" },
+    cta: { label: "Quero conversar", href: "/#contato" },
   },
 
   footer: {
