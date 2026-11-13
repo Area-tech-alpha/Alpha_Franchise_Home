@@ -46,7 +46,7 @@ export default function CasePizzaria() {
           {pizzaria.stats.map((stat) => (
             <div
               key={stat.label}
-              className="flex flex-col-reverse rounded-[14px] border border-border-strong bg-[rgba(10,10,11,.6)] px-5 py-3.5 backdrop-blur-[14px]"
+              className="flex flex-col-reverse rounded-[14px] border border-border-strong bg-[rgba(10,10,11,.8)] px-5 py-3.5"
             >
               <dt className="text-[11px] text-text-dim">{stat.label}</dt>
               <dd className="font-heading text-[19px] font-semibold text-white">{stat.value}</dd>
