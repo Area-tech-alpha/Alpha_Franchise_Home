@@ -1,37 +1,32 @@
 import Image from "next/image";
-import { hasPublicFile } from "@/lib/assets";
 import { content } from "@/lib/content";
 
 const { pizzaria } = content;
 
 export default function CasePizzaria() {
-  const hasPhoto = hasPublicFile(pizzaria.image.src);
-
   return (
     <section
       id="alphas"
       aria-labelledby="alphas-titulo"
       className="relative flex min-h-[86vh] items-end overflow-hidden md:min-h-screen"
     >
-      {hasPhoto && (
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={pizzaria.image.src}
-            alt={pizzaria.image.alt}
-            fill
-            sizes="100vw"
-            className="scale-[1.04] object-cover object-[center_62%]"
-          />
-          <div
-            className="absolute inset-0"
-            aria-hidden="true"
-            style={{
-              background:
-                "linear-gradient(0deg, rgba(2,2,2,.96) 8%, rgba(2,2,2,.55) 42%, rgba(2,2,2,.15) 68%, rgba(2,2,2,.55) 100%), radial-gradient(circle at 82% 18%, rgba(255,183,3,.16), transparent 45%)",
-            }}
-          />
-        </div>
-      )}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={pizzaria.image.src}
+          alt={pizzaria.image.alt}
+          fill
+          sizes="100vw"
+          className="scale-[1.04] object-cover object-[center_62%]"
+        />
+        <div
+          className="absolute inset-0"
+          aria-hidden="true"
+          style={{
+            background:
+              "linear-gradient(0deg, rgba(2,2,2,.96) 8%, rgba(2,2,2,.55) 42%, rgba(2,2,2,.15) 68%, rgba(2,2,2,.55) 100%), radial-gradient(circle at 82% 18%, rgba(255,183,3,.16), transparent 45%)",
+          }}
+        />
+      </div>
 
       <div className="reveal relative z-[1] w-full px-[6%] pt-28 pb-[60px] md:pb-[90px]">
         <span className="eyebrow">{pizzaria.eyebrow}</span>

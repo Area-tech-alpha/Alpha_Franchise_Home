@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { hasPublicFile } from "@/lib/assets";
 import { content } from "@/lib/content";
 
 const { midia } = content;
 
 export default function Midia() {
-  const items = midia.items.filter((item) => hasPublicFile(item.image.src));
-  if (items.length === 0) return null;
+  const { items } = midia;
 
   return (
     <section id="imprensa" aria-labelledby="imprensa-titulo" className="relative py-[70px]">
