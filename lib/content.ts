@@ -160,20 +160,19 @@ export const content = {
     ],
   },
 
-  // No WP os contadores aparecem zerados. Cada valor fica null (e oculto) até o
-  // número real ser confirmado. Ex.: value: "R$500M+".
+  // Valores do WordPress (data-target dos contadores), confirmados. null = oculto.
   numeros: {
     eyebrow: "Nossos números",
     title: "Resultado não é opinião. É número.",
     destaque: {
-      value: null as string | null,
+      value: "R$500M+" as string | null,
       label: "gerados em vendas para os restaurantes que confiaram na Alpha",
     },
     items: [
-      { value: null as string | null, label: "restaurantes já atendidos" },
-      { value: null as string | null, label: "especialistas dedicados" },
-      { value: null as string | null, label: "de aumento médio no faturamento" },
-      { value: null as string | null, label: "franqueados pelo Brasil" },
+      { value: "2.000+" as string | null, label: "restaurantes já atendidos" },
+      { value: "80+" as string | null, label: "especialistas dedicados" },
+      { value: "30%" as string | null, label: "de aumento médio no faturamento" },
+      { value: "70+" as string | null, label: "franqueados pelo Brasil" },
     ],
   },
 
@@ -402,11 +401,11 @@ export const content = {
     about:
       "A maior assessoria de marketing especializada em restaurantes da América Latina. Estrutura 100% presencial, resultado real.",
     location: "Brasília, DF, atendimento em todo o Brasil",
-    // null = oculto até os links serem confirmados (no WP estão com "#").
+    // null = oculto.
     socials: [
-      { label: "Instagram", href: null as string | null },
-      { label: "TikTok", href: null as string | null },
-      { label: "YouTube", href: null as string | null },
+      { label: "Instagram", href: "https://www.instagram.com/assessorialpha/" as string | null },
+      { label: "TikTok", href: "https://www.tiktok.com/@assessorialpha" as string | null },
+      { label: "YouTube", href: "https://www.youtube.com/@assessorialpha" as string | null },
     ],
     columns: [
       {
