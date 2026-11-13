@@ -56,7 +56,7 @@ export default function MobileMenu({ links, cta }: { links: NavLink[]; cta: NavL
             id="menu-mobile"
             aria-label="Menu"
             inert={!open}
-            className={`fixed inset-0 z-[1150] flex flex-col items-center justify-center gap-7 bg-[rgba(5,5,5,.98)] transition-transform duration-[450ms] ease-alpha lg:hidden ${
+            className={`fixed inset-0 z-[1150] flex flex-col items-center justify-center gap-7 bg-[rgba(5,5,5,.98)] backdrop-blur-[20px] transition-transform duration-[450ms] ease-alpha lg:hidden ${
               open ? "translate-x-0" : "translate-x-full"
             }`}
           >
