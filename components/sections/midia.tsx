@@ -32,7 +32,7 @@ export default function Midia() {
                     alt={item.image.alt}
                     fill
                     sizes="(max-width: 768px) 100vw, 500px"
-                    className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.06]"
                   />
                   <span className="absolute top-4 left-4 z-[1] rounded-full border border-border-gold bg-[rgba(10,10,11,.75)] px-3.5 py-[7px] text-[11px] font-bold tracking-[.08em] text-gold-1 uppercase">
                     {item.outlet}
