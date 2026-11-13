@@ -39,7 +39,7 @@ export default function DepoimentosPage() {
                   <Utensils className="h-[15px] w-[15px] text-gold-1" aria-hidden="true" />
                   {depoimentos.label}
                 </h2>
-                <ul className="mb-14 grid grid-cols-1 gap-[22px] md:grid-cols-2 min-[1101px]:grid-cols-3">
+                <ul className="mb-14 grid grid-cols-1 gap-[22px] md:grid-cols-2 desk:grid-cols-3">
                   {videos.map((video) => (
                     <li key={video.slug}>
                       <VideoCard
@@ -61,7 +61,7 @@ export default function DepoimentosPage() {
                   <Utensils className="h-[15px] w-[15px] text-gold-1" aria-hidden="true" />
                   {depoimentos.page.shortsLabel}
                 </h2>
-                <ul className="grid grid-cols-1 gap-[22px] sm:grid-cols-2 min-[1101px]:grid-cols-3">
+                <ul className="grid grid-cols-1 gap-[22px] sm:grid-cols-2 desk:grid-cols-3">
                   {shorts.map((short) => (
                     <li key={short.videoId} className="mx-auto w-full max-w-[400px]">
                       <YoutubeShort

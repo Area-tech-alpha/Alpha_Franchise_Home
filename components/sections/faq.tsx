@@ -9,8 +9,8 @@ export default function Faq() {
   return (
     <section id="faq" aria-labelledby="faq-titulo" className="relative py-[70px]">
       <FaqJsonLd />
-      <div className="container-alpha grid grid-cols-1 gap-9 min-[1101px]:grid-cols-[.8fr_1.2fr] min-[1101px]:gap-[70px]">
-        <div className="reveal min-[1101px]:sticky min-[1101px]:top-[120px] min-[1101px]:self-start">
+      <div className="container-alpha grid grid-cols-1 gap-9 desk:grid-cols-[.8fr_1.2fr] desk:gap-[70px]">
+        <div className="reveal desk:sticky desk:top-[120px] desk:self-start">
           <span className="eyebrow">{faq.eyebrow}</span>
           <h2 id="faq-titulo" className="text-[clamp(1.9rem,3.2vw,2.5rem)] leading-[1.2]">
             {faq.title}

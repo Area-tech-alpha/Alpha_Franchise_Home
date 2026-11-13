@@ -21,7 +21,7 @@ export default function Depoimentos() {
           <Utensils className="h-[15px] w-[15px] text-gold-1" aria-hidden="true" />
           {depoimentos.label}
         </p>
-        <ul className="grid grid-cols-1 gap-[22px] md:grid-cols-2 min-[1101px]:grid-cols-4">
+        <ul className="grid grid-cols-1 gap-[22px] md:grid-cols-2 desk:grid-cols-4">
           {videos.map((video) => (
             <li key={video.slug} className="reveal">
               <VideoCard

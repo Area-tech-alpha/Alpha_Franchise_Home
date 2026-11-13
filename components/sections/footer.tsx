@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-border pt-[70px] pb-[30px]">
       <div className="container-alpha relative z-[1]">
-        <div className="grid grid-cols-1 gap-9 border-b border-border pb-11 md:grid-cols-2 md:gap-x-8 md:gap-y-10 min-[1101px]:grid-cols-[1.2fr_.8fr_.8fr_1fr]">
+        <div className="grid grid-cols-1 gap-9 border-b border-border pb-11 md:grid-cols-2 md:gap-x-8 md:gap-y-10 desk:grid-cols-[1.2fr_.8fr_.8fr_1fr]">
           <div>
             {hasPublicFile(logo.src) ? (
               <Image
@@ -64,7 +64,7 @@ export default function Footer() {
             </nav>
           ))}
 
-          <div className="md:col-span-2 min-[1101px]:col-span-1">
+          <div className="md:col-span-2 desk:col-span-1">
             <h2 className="mb-3.5 font-body text-[11.5px] font-semibold tracking-[.14em] text-text-dim uppercase">
               {footer.cta.title}
             </h2>

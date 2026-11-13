@@ -6,7 +6,7 @@ const { hero } = content;
 export default function Hero() {
   return (
     <section id="hero" className="relative overflow-hidden pt-[130px] pb-[70px] md:pt-[170px] md:pb-[110px]">
-      <div className="container-alpha relative z-[1] grid items-center gap-12 min-[1101px]:grid-cols-[1.15fr_.85fr] min-[1101px]:gap-14">
+      <div className="container-alpha relative z-[1] grid grid-cols-1 items-center gap-12 desk:grid-cols-[1.15fr_.85fr] desk:gap-14">
         <div>
           <span className="eyebrow">{hero.eyebrow}</span>
           <h1 className="mb-6 font-display text-[clamp(2.3rem,4.4vw,3.8rem)] leading-[1.08] font-semibold">
@@ -31,7 +31,7 @@ export default function Hero() {
 
         <div
           id="contato"
-          className="relative z-[1] w-full max-w-[480px] scroll-mt-28 rounded-[32px] border border-border-strong bg-glass px-6 py-8 shadow-[0_40px_100px_rgba(0,0,0,.5)] backdrop-blur-[24px] sm:px-9 sm:py-10 min-[1101px]:max-w-none"
+          className="relative z-[1] w-full max-w-[480px] scroll-mt-28 rounded-[32px] border border-border-strong bg-glass px-6 py-8 shadow-[0_40px_100px_rgba(0,0,0,.5)] backdrop-blur-[24px] sm:px-9 sm:py-10 desk:max-w-none"
         >
           <h2 className="mb-1.5 text-[19px] font-semibold">{hero.formTitle}</h2>
           <p className="mb-6 text-[13.5px] text-text-dim">{hero.formSubtitle}</p>
